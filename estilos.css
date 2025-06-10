@@ -1,0 +1,130 @@
+/* estilos.css con responsive */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: proxima-nova, hammersmith-one, sans-serif;
+  background-color: #fffaeb;
+  color: #81a969;
+  padding: 1em;
+}
+
+header {
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding-top: 0.5em;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #9dcd5a;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #9dcd5a;
+  cursor: pointer;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+section {
+  padding: 1em;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1em;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+.imagen-hero, .imagen-mate {
+  max-height: 250px;
+  width: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+form textarea {
+  width: 100%;
+  height: 100px;
+  margin: 0.5em 0;
+}
+
+form button {
+  padding: 0.5em 1em;
+  background-color: #77bfa3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-container {
+  text-align: left;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 0.5em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #fffaeb;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .contenedor {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

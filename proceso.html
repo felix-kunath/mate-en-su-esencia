@@ -1,0 +1,63 @@
+<!-- proceso.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mate en su esencia - Proceso</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+  <header>
+    <h1>Mate en su esencia</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proceso.html">Proceso</a></li>
+        <li><a href="regiones.html">Regiones</a></li>
+        <li><a href="marcas.html">Marcas</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Proceso de elaboración de la yerba mate</h2>
+      <div class="etapa">
+        <h3>Cosecha</h3>
+        <p>La cosecha de yerba mate se realiza anualmente, principalmente durante la época de receso vegetativo de la planta, que es desde abril a septiembre. El Instituto Nacional de la Yerba Mate (INYM) sugiere una suspensión de actividades de cosecha durante los meses de octubre y noviembre, debido a la brotación plena de la planta. 
+        <img src="imagenes/cosecha-yerba.jpg" alt="cosecha-yerba"class="imagen-hero" />
+      </div>
+      <div class="etapa">
+        <h3>Secado</h3>
+        <p>El secado de la yerba mate es un proceso crucial en la elaboración de la bebida tradicional. Se divide en dos etapas: el "zapecado" o "sapecado" y el secado propiamente dicho. El zapecado consiste en una exposición breve a altas temperaturas (300-400°C) para detener la fermentación y conservar el color verde. Luego, la yerba se seca completamente, generalmente utilizando sistemas de secado a barbacoa o a cintas. 
+
+        <img src="imagenes/secado-yerba.jpg" alt="secado-yerba"class="imagen-hero" />
+      </div>
+      <div class="etapa">
+        <h3>Molienda</h3>
+        <p>La molienda de la yerba mate es el proceso de trituración de las hojas y palos de la yerba para obtener diferentes tipos de yerba, desde la "canchada" hasta la "molida" con distintos grados de finura. Este proceso influye en el sabor y la forma en que la yerba interactúa con el agua. 
+        <img src="imagenes/molienda-yerba.jpg" alt="molienda-yerba"class="imagen-hero" />
+      </div>
+      <div class="etapa">
+        <h3>Empaquetado</h3>
+        <p>El envasado de yerba mate consiste en colocar la yerba en un envase que la proteja de la humedad, los olores y otros factores que puedan alterar su calidad. Generalmente, se utiliza un paquete hermético de papel especial o de plástico, con capas de distintos materiales para mantener la frescura y las características del producto. 
+       <img src="imagenes/empaquetado-yerba.jpg" alt="empaquetado-yerba"class="imagen-hero" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mate en su esencia</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
