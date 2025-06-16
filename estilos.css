@@ -133,5 +133,5 @@ img {
   height: auto;
   display: block;
   margin: 0 auto 1em auto;
-  max-height: 320px; /* Puedes ajustar este valor si quieres un límite */
+  max-height: 300px; /* Puedes ajustar este valor si quieres un límite */
 }
