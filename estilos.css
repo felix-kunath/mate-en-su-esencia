@@ -74,7 +74,7 @@ footer {
   grid-column: span 12;
 }
 
-Img {
+img {
   max-width: 250px;
   width: 100%;
   height: auto;
