@@ -7,11 +7,25 @@
 }
 
 body {
-  font-family: protest-riot, hammersmith-one, sans-serif;
+  font-family: hammersmith-one, sans-serif;
   background-color: #fffaeb;
   color: #81a969;
   padding: 1em;
+  h1 {
+  font-family: 'Protest Riot', cursive;
 }
+h2 {
+  font-family: 'Protest Riot', cursive;
+}
+  h3 {
+  color: #81a969
+}
+
+p {
+  color: #9dcd5a
+}
+}
+
 
 header {
   padding: 1em;
