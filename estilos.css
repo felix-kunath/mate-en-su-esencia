@@ -74,9 +74,10 @@ footer {
   grid-column: span 12;
 }
 
-.imagen-hero, .imagen-mate {
-  max-height: 250px;
-  width: auto;
+Img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
   display: block;
   margin: 1em auto;
 }
@@ -127,11 +128,4 @@ form button {
   .contenedor {
     grid-template-columns: repeat(6, 1fr);
   }
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 1em auto;
-  max-height: 300px; /* Puedes ajustar este valor si quieres un límite */
 }
