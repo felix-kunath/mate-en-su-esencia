@@ -1,0 +1,80 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Botones personalizados */
+.btn-custom {
+  background-color: #f5f5dc; /* beige */
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #e0e0c7;
+  transform: scale(1.05);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.hero-img {
+  object-fit: cover;
+  height: 100%;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hero con texto */
+.hero-content h2, 
+.hero-content p {
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Footer */
+.footer {
+  background-color: coral;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  background: linear-gradient(to bottom right, #fffaf6, #ffe4dc); 
+
+}
+
+.footer a {
+  text-decoration: none;
+  background: linear-gradient(to bottom right, #fffaf6, #ffe4dc); 
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer img {
+  display: inline-block;
+  height: 60px; /* Logo más grande */
+}
+
+/* Fondo general coral */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #fffaf6, #ffe4dc); 
+  margin: 0;
+  padding: 0;
+}
+
+/* Para que las secciones con imágenes no queden tapadas */
+.hero-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

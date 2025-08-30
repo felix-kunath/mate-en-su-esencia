@@ -1,78 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mate en su esencia</title>
-  <link rel="stylesheet" href="estilos.css">
+  <title>Inicio</title>
+
+  <!-- Google Fonts -->
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- <header>
-    <div class="logo-container">
-      <img src="logo_mate.jpg" alt="Logo del sitio" class="logo" />
-    </div>
-    <h1>Mate en su esencia</h1>
-   <nav>
-  <ul class="nav-menu">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="proceso.html">Proceso</a></li>
-    <li><a href="regiones.html">Regiones</a></li>
-    <li><a href="marcas.html">Marcas</a></li>
-  </ul>
-  <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+  <!-- Navbar solo con el nombre -->
+<!-- Navbar con título y buscador -->
+<nav class="navbar navbar-light bg-light px-3">
+  <a class="navbar-brand" href="#"><h1>Seramic</h1></a>
+  
+  <!-- Barra de búsqueda -->
+  <form class="d-flex ms-auto" role="search">
+    <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Buscar">
+    <button class="btn btn-custom" type="submit">Buscar</button>
+  </form>
 </nav>
 
-    
+
+  <!-- Hero con imagen y botón -->
+  <header class="hero">
+    <img src="imagenes/imagenppal.jpeg" alt="Imagen principal" class="img-fluid w-100 hero-img">
+    <div class="hero-content">
+      <a href="sobrenosotros.html" class="btn btn-custom btn-lg">Sobre Nosotros</a>
+
+    </div>
   </header>
 
-  <main>
+  <!-- Sección dos imágenes + botón en el medio -->
+  <section class="container my-5">
+    <div class="row align-items-center text-center">
+      <div class="col-md-5">
+        <img src="imagenes/imagenizq.jpeg" alt="Imagen izquierda" class="img-fluid">
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="btn btn-custom btn-lg">Productos</a>
 
-    <section class="hero contenedor">
-      <div class="col-12">
-        <h2>Conocé cómo se produce, de dónde viene y qué yerbas probar</h2>
-        <img src="almacen-mate.jpg.jpg" alt="Almacen de yerba mate" class="imagen-hero" />
+      </div>
+      <div class="col-md-5">
+        <img src="imagenes/imagender.jpeg" alt="Imagen derecha" class="img-fluid">
+      </div>
+    </div>
+  </section>
+<footer class="footer container-fluid py-3">
+  <div class="container d-flex justify-content-between align-items-center">
     
-      </div>
-    </section>
+    <!-- Izquierda: redes + contacto -->
+    <div class="d-flex gap-4 align-items-center">
+      <!-- Instagram con icono -->
+      <a href="https://www.instagram.com/ser4mic?igsh=ZXVtdWo4azJlbnZ5" target="_blank">
+        <img src="imagenes/logoig.svg" alt="Instagram" style="height:30px;">
+      </a>
+      <span>Tel: +54 000 000000</span>
+      <span>Mail: ejemplo@correo.com</span>
+    </div>
 
-    <section class="mapa contenedor">
-      <div class="col-12">
-        <h3>Origen del mate</h3>
-        <p>El mate es una infusión tradicional de Sudamérica que tiene sus raíces en la cultura de los pueblos guaraníes. Los guaraníes, quienes habitaban en la región del Río de la Plata (actual Argentina, Paraguay, Uruguay y el sur de Brasil), utilizaban las hojas de la planta yerba mate (Ilex paraguariensis) para preparar una bebida que consideraban sagrada. 
-        <img src="origen-mate.jpg.jpg" alt="Orígenes de la yerba mate" class="imagen-mate" />
-      </div>
-    </section>
+    <!-- Derecha: marca + logo -->
+    <div class="d-flex align-items-center gap-2">
+      
+      <img src="imagenes/logoseramic.jpg" alt="Logo Seramic" style="height:60px;">
+    </div>
 
-    <section class="formulario contenedor">
-      <div class="col-12">
-        <h3>Escribinos tu duda sobre el mate</h3>
-        <form>
-          
-          <textarea id="mensaje" name="mensaje"></textarea><br>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
+  </div>
+</footer>
 
-    <section class="video contenedor">
-      <div class="col-12">
-        <h3>Video informativo</h3>
-        <iframe width="100%" height="315" 
-          src="https://www.youtube.com/embed/2AceUbxEuHI"
-          title="Proceso de elaboración de la yerba mate" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section>
 
-  </main>
-
-  <footer>
-    <p>© 2025 Descubrí la Yerba Mate | Sitio con fines educativos</p>
-  </footer>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
